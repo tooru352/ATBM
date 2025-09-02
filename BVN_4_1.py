@@ -21,11 +21,12 @@ def MaHoa(plaintext, key):
 #     return plaintext
 
 def main():
-    p = (input("Nhap chuoi can ma hoa:")).upper()
-    key = int(input("Nhap khoa ma hoa:"))
+    p = (input("Nhap ten cua ban:")).upper()
+    key = int(input("Nhap STT cua ban:"))
     c = MaHoa(p, key)
     print("Chuoi sau khi ma hoa:", c)
     # print("Chuoi sau khi giai ma:", GiaiMa(c, key))
     
 if __name__ == "__main__": #entry point
+
     main()
