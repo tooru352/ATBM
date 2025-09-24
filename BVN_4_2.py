@@ -20,11 +20,12 @@ def decrypt(ciphertext, k=0):
         plaintext_chars.append(shift_char(ch, -k))
     return ''.join(plaintext_chars)
 
-# --- Ví dụ sử dụng ---
+#------------
 P = "Toan"
-k = 9  # dịch cố định 9
+k = 9
 C = encrypt(P, k)
 print("Plaintext:", P)
 print("Ciphertext (k = 9):", C)
+
 
 
